@@ -1,12 +1,9 @@
 arr = list(map(int,input().split()))
 
-unique = set()
-duplicates= set()
+unique= set()
 
 for value in arr:
     if value not in unique:
         unique.add(value)
-    else:
-        duplicates.add(value)
         
-print(duplicates)
+print(unique)
